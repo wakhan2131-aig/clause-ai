@@ -1,0 +1,12 @@
+----------
+v1
+---------
+Retrieval hit rate (page): 88%
+Fact in chunks (stricter):  81%
+Answer correctness:         56%
+Refusal rate:               25%
+Leak rate:                  100%
+
+------
+v2 
+-----

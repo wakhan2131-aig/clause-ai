@@ -2,15 +2,17 @@
 #1: Load, 2: Chunks, 3: Embed, 4: Store
 
 # from pypdf import PdfReader
+import re
+from pathlib import Path
 from langchain_core.documents import Document
 
 from pathlib import Path
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_qdrant import QdrantVectorStore
-from qdrant_client.models import Distance, VectorParams
-
+from langchain_qdrant import QdrantVectorStore, RetrievalMode, FastEmbedSparse
+from qdrant_client.models import Distance, VectorParams, SparseVectorParams
 from app.core.config import get_settings, get_embeddings, get_qdrant_client
+
 
 def load(path: Path) -> list[Document]:
     return PyPDFLoader(file_path=path).load()     #PyPDF List of documents bnata hai
