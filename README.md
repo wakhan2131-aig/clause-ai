@@ -696,7 +696,7 @@ git checkout -b feature/new-feature
 
 ---
 
-## 16. Security Best Practices
+## 15. Security Best Practices
 
 Security is an important consideration when developing AI applications.
 
@@ -713,7 +713,7 @@ Recommended practices:
 
 ---
 
-## 17. Future Improvements
+## 16. Future Improvements
 
 The following areas are potential development directions.
 
@@ -754,7 +754,7 @@ These items represent development opportunities rather than a claim that every f
 
 ---
 
-## 19. Author
+## 17. Author
 
 **Wasi Tariq**
 
